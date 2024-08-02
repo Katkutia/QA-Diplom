@@ -80,7 +80,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Номер карты, ввод букв")
+    @DisplayName(" Неверно заполнено поле Номер карты, при вводе букв")
     public void shouldIncorrectCardNumberLetter() {
         buy.fieldCardNumberInsert(DataHelper.getCardNumberLetters());
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -93,7 +93,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Номер карты, ввод спецсимволов")
+    @DisplayName(" Неверно заполнено поле Номер карты, при вводе спецсимволов")
     public void shouldIncorrectCardNumberSymbols() {
         buy.fieldCardNumberInsert(DataHelper.getSymbol());
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -119,7 +119,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Номер карты,  16 нулей")
+    @DisplayName(" Неверно заполнено поле Номер карты, при вводе 16 нулей")
     public void shouldIncorrectCardNumberZeros() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_ZEROS);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -146,7 +146,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Месяц, ввод букв")
+    @DisplayName(" Неверно заполнено поле Месяц,при  вводе букв")
     public void shouldIncorrectMonthLetters() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getLetters());
@@ -159,7 +159,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("Т Неверно заполнено поле Месяц, ввод спецсимволов")
+    @DisplayName("Т Неверно заполнено поле Месяц,при вводе спецсимволов")
     public void shouldIncorrectMonthSymbols() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getSymbol());
@@ -186,7 +186,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("ТС-2.4.4 Неверно заполнено поле Месяц, введены нули")
+    @DisplayName("Неверно заполнено поле Месяц, при вводе нулей")
     public void shouldIncorrectMonthZeros() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.DATE_ZEROS);
@@ -226,7 +226,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Год, ввод букв")
+    @DisplayName(" Неверно заполнено поле Год, при ввод букв")
     public void shouldIncorrectYearLetters() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -239,7 +239,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Год, ввод спецсимволов")
+    @DisplayName(" Неверно заполнено поле Год,при  ввод спецсимволов")
     public void shouldIncorrectYearSymbols() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -252,7 +252,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Год, слишком короткое значение")
+    @DisplayName(" Неверно заполнено поле Год, при слишком коротком значение")
     public void shouldIncorrectYearShort() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -266,7 +266,7 @@ public class CreditTest {
 
 
     @Test
-    @DisplayName(" Неверно заполнено поле Год, нули")
+    @DisplayName(" Неверно заполнено поле Год,при вводе нулей")
     public void shouldIncorrectYearZeros() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -294,7 +294,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Владелец, ввод спецсимволов")
+    @DisplayName(" Неверно заполнено поле Владелец,при вводе спецсимволов")
     public void shouldIncorrectCardholderSymbols() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -307,7 +307,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Владелец, ввод цифр")
+    @DisplayName(" Неверно заполнено поле Владелец,при ввод цифр")
     public void shouldIncorrectCardholderDigits() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -320,7 +320,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле Владелец, ввод кириллицы")
+    @DisplayName(" Неверно заполнено поле Владелец,при вводе букв кириллицы")
     public void shouldIncorrectCardholderCyrillic() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -347,7 +347,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле CVC/CVV, ввод букв")
+    @DisplayName(" Неверно заполнено поле CVC/CVV,при вводе букв")
     public void shouldIncorrectCvcLetters() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -360,7 +360,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName(" Неверно заполнено поле CVC/CVV, ввод спецсимволов")
+    @DisplayName(" Неверно заполнено поле CVC/CVV,при вводе спецсимволов")
     public void shouldIncorrectCvcSymbols() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());

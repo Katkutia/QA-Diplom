@@ -81,7 +81,7 @@ public class DebitTest {
     }
 
     @Test
-    @DisplayName("Неверно заполнено поле Номер карты, ввод латинских букв")
+    @DisplayName("Неверно заполнено поле Номер карты,при вводе латинских букв")
     public void shouldIncorrectCardNumberLetter() {
         buy.fieldCardNumberInsert(DataHelper.getCardNumberLetters());
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -94,7 +94,7 @@ public class DebitTest {
     }
 
     @Test
-    @DisplayName("Неверно заполнено поле Номер карты, ввод спецсимволов")
+    @DisplayName("Неверно заполнено поле Номер карты, при вводе спецсимволов")
     public void shouldIncorrectCardNumberSymbols() {
         buy.fieldCardNumberInsert(DataHelper.getSymbol());
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
@@ -108,7 +108,7 @@ public class DebitTest {
 
 
     @Test
-    @DisplayName("Неверно заполнено поле Номер карты,  16 нулей")
+    @DisplayName("Неверно заполнено поле Номер карты, при вводе 16 нулей")
     public void shouldIncorrectCardNumberZeros() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_ZEROS);
         buy.fieldCardMonthInsert(DataHelper.getMonthValid());
