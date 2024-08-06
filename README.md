@@ -49,16 +49,16 @@
    - ```docker compose up ```
 
 **5**. Для запуска PostgreSQL в терминале вводим команду:
-   - ```java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar``` 
+   - ```java -jar ./artifacts/aqa-shop.jar "--spring.datasource.url=jdbc:postgresql://localhost:5432/app"``` 
 
 **6**. Для запуска MySQL в терминале вводим команду:
-   - ```java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar ```
+   - ```java -jar ./artifacts/aqa-shop.jar "--spring.datasource.url=jdbc:mysql://localhost:3306/app" ```
 
 **7**. Для запуска тестов PostgreSQL во втором терминале вводим команду:
-   - ```./gradlew clean test -DurlDB="jdbc:postgresql://localhost:5432/app"``` 
+   - ```./gradlew clean test "-Ddb.url=jdbc:mysql://localhost:3306/app" ``` 
 
 **8**. Для запуска тестов MySQL во втором терминале вводим команду:
-   - ```./gradlew clean test -DurlDB="jdbc:mysql://localhost:3306/app"```
+   - ```./gradlew clean test "-Ddb.url=jdbc:postgresql://localhost:5432/app" ```
 
 **9**. Запуск для создания отчетов Allure gradlew командой
    - ```./gradlew allureReport```
