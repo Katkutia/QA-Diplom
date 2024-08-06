@@ -45,20 +45,20 @@
 
 **3**. Открыть склонированый проект в программе IntelliJ IDEA.
 
-**4**. Далее нам необходимо запустить контейнеры,в терминале IntelliJ IDEA вводим команду
+**4**. Далее нам необходимо запустить контейнеры, в терминале IntelliJ IDEA вводим команду
    - ```docker compose up ```
 
 **5**. Для запуска PostgreSQL в терминале вводим команду:
-   - ```java -jar ./artifacts/aqa-shop.jar --spring.datasource.url=jdbc:postgresql://localhost:5432/app``` 
+   - ```java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar``` 
 
 **6**. Для запуска MySQL в терминале вводим команду:
-   - ```java -jar ./artifacts/aqa-shop.jar --spring.datasource.url=jdbc:mysql://localhost:3306/app```
+   - ```java "-Dspring.datasource.url=jdbc:mysql://localhost:3306/app" -jar artifacts/aqa-shop.jar ```
 
 **7**. Для запуска тестов PostgreSQL во втором терминале вводим команду:
-   - ```.\gradlew clean test -DdbUrl=jdbc:postgresql://localhost:5432/app``` 
+   - ```./gradlew clean test -DurlDB="jdbc:postgresql://localhost:5432/app"``` 
 
 **8**. Для запуска тестов MySQL во втором терминале вводим команду:
-   - ```.\gradlew clean test -DdbUrl=jdbc:mysql://localhost:3306/app```
+   - ```./gradlew clean test -DurlDB="jdbc:mysql://localhost:3306/app"```
 
 **9**. Запуск для создания отчетов Allure gradlew командой
    - ```./gradlew allureReport```
