@@ -1,5 +1,6 @@
 # Дипломный проект по профессии «Тестировщик»
-(Само задание по Дипломной работе)[https://github.com/netology-code/qa-diploma]
+
+[Само задание по Дипломной работе](https://github.com/netology-code/qa-diploma)
 
 ## Описание приложения
 
