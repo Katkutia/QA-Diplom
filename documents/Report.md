@@ -18,7 +18,7 @@
 
 ![img_1.png](..%2Fpic%2Fimg_1.png)
 ![img_2.png](..%2Fpic%2Fimg_2.png)
-
+![img_4.png](..%2Fpic%2Fimg_4.png)
 
 ### Результат в процентах:
 
