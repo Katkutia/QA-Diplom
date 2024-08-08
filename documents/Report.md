@@ -17,13 +17,13 @@
 
 Для проверки было реализовано всего 54 тест-кейсов, из них 27 тестов для обычной оплаты тура и 27 тестов для оплаты тура в кредит.
 
-_AllureReport_
+### _AllureReport_
 
 ![img_1.png](..%2Fpic%2Fimg_1.png)
 ![img_2.png](..%2Fpic%2Fimg_2.png)
 ![img_4.png](..%2Fpic%2Fimg_4.png)
 
-_Gradle_
+### _Gradle_
 ![img_6.png](..%2Fpic%2Fimg_6.png)
 
 
@@ -32,12 +32,14 @@ _Gradle_
 
 - 32 теста показали успешный результат и составляют 59.25%
 - 22 теста выдали не успешный результат и составляют 40.74%
-- 
-- 
-  _AllureReport_
+
+
+### _AllureReport_
+
 ![img.png](..%2Fpic%2Fimg.png)
 ![img_3.png](..%2Fpic%2Fimg_3.png)
-  _Gradle_
+
+### _Gradle_
 ![img_5.png](..%2Fpic%2Fimg_5.png)
 
 ### Общие рекомендации:
