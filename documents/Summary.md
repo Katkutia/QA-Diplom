@@ -11,8 +11,9 @@
 - Подготовлена документация:
 1. [Запуск авто-тестов и генерация репорта](https://github.com/Katkutia/QA-Diplom/blob/main/README.md)
 2. [План автоматизации тестирования](https://github.com/Katkutia/QA-Diplom/blob/main/documents/Plan.md)
-3. [Отчёт по итогам автоматизации](https://github.com/Katkutia/QA-Diplom/blob/main/documents/Summary.md) 
-4. [Отчет о проведенном тестировании в Allure Report](https://github.com/Katkutia/QA-Diplom/blob/main/documents/Report.md)
+3. [Отчет о проведенном тестировании в Allure Report](https://github.com/Katkutia/QA-Diplom/blob/main/documents/Report.md)
+4. [Отчёт по итогам автоматизации](https://github.com/Katkutia/QA-Diplom/blob/main/documents/Summary.md) 
+
 
 
 ### Причины, по которым что-то не было сделано
