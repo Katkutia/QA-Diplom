@@ -159,7 +159,7 @@ public class CreditTest {
     }
 
     @Test
-    @DisplayName("Т Неверно заполнено поле Месяц,при вводе спецсимволов")
+    @DisplayName("Неверно заполнено поле Месяц,при вводе спецсимволов")
     public void shouldIncorrectMonthSymbols() {
         buy.fieldCardNumberInsert(DataHelper.CARD_NUMBER_APPROVED);
         buy.fieldCardMonthInsert(DataHelper.getSymbol());
